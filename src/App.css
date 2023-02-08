@@ -1,3 +1,49 @@
+* {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-color: gainsboro;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board-game {
+  width: 400px;
+  height: 400px;
+  background: #fff;
+  border: 1px solid #000;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.board-game span {
+  width: 33.33333%;
+  height: 33.3333%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  font-size: 30px;
+  position: relative;
+  outline: 1px solid #ccc;
+}
+
+.board-game span abbr {
+  font-size: 20px;
+  color: rgba(0, 0, 0, .5);
+  position: absolute;
+  top: 2px !important;
+  left: 5px !important;
+}
+
+.board-game span:hover {
+  background: #f6f6f6;
+  cursor: pointer;
 }
